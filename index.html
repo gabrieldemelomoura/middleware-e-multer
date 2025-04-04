@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Middleware</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-DQvkBjpPgn7RC31MCQoOeC9TI2kdqa4+BSgNMNj8v77fdC77Kj5zpWFTJaaAoMbC" crossorigin="anonymous">
+</head>
+<body>
+    <header class="title-header">
+        <h1>Middleware: Conceito e Exemplos no Express.js</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Middleware</a></li>
+            <li><a href="multer.html">Multer</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>O que é Middleware?</h1>
+        <p>
+            Middleware é uma função que tem acesso ao objeto <code>request</code> (<code>req</code>), ao objeto <code>response</code> (<code>res</code>) e à próxima função do ciclo de requisição/resposta da aplicação, chamada <code>next()</code>.
+        </p>
+        <p>
+            Ele é utilizado para interceptar, modificar ou até encerrar uma requisição antes que ela chegue ao seu destino final (rota ou outro middleware).
+        </p>
+
+        <h2>Como funciona?</h2>
+        <p>
+            O middleware pode ser usado de forma global, em rotas específicas ou até para tratar erros. Ele é executado em ordem, conforme são definidos no código.
+        </p>
+
+        <h2>Como configurar:</h2>
+        <div class="">
+        <img src="./img/pr01.png" alt="" >
+        </div>
+
+        <h2>Middleware em rotas específicas:</h2>
+        <img src="./img/pr02.png" alt="">
+
+        <h2>Middleware de tratamento de erros:</h2>
+        <img src="./img/pr03.png" alt="">
+
+        <h6>Middlewares são essenciais em aplicações Express para autenticação, logging, tratamento de erros, parsing de dados, e muito mais!</h6>
+    </div>
+
+    <footer>
+        <p>© middleware e Multer</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu" crossorigin="anonymous"></script>
+</body>
+</html>
